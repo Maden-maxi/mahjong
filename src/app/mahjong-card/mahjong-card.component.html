@@ -1,0 +1,3 @@
+<div class="card" [@match]="isActive ? 'active': 'inactive'" [class.card_active]="isActive" (click)="flip.emit()">
+    <div class="card__number" @fade *ngIf="isNumberVisible">{{ number }}</div>
+</div>

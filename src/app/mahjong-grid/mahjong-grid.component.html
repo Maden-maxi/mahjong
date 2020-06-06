@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Mahjong Game</h1>
+    <button type="button" (click)="restart()">Restart</button>
+    <h2>Mistakes:  <span>{{ mistakes }}</span></h2>
+    <div class="grid">
+        <div *ngFor="let card of cards" class="grid-item">
+            <app-mahjong-card
+            [number]="card.value" 
+            [isNumberVisible]="card.visible" 
+            [isActive]="card.matched"
+            (flip)="openNumber(card)"
+            ></app-mahjong-card>
+        </div>
+    </div>
+</div>

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mahjong"
+    }
+  },
+  "defaultProject": "mahjong",
+  "cli": {
+    "analytics": "449624a2-868d-42ac-b2fc-45fb86c09b90"
+  }
 }
